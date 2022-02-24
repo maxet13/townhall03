@@ -9,7 +9,7 @@ html {
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 600px;
+    width: 800px;
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
@@ -50,7 +50,7 @@ main {
 	clear: left;
 }
 main {
-	padding: 0 30px;
+	padding: 0 0;
 }
 main h1 {
 	font-size: 150%;
@@ -84,6 +84,19 @@ main li {
 	padding-bottom: .35em;
 }
 
+section {
+	width: 525px;
+	float: right;
+	padding: 0 20px 20px 20px;
+}
+
+aside {
+	width: 215px;
+	float: right;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
 /* the styles for the article */
 article {
 	padding: .5em 0;
@@ -108,9 +121,17 @@ aside img {
 	padding-bottom: 1em;
 }
 
+aside h1 {
+	font-size: 150%;
+	padding: .3em 0;
+	border: none;
+	color: #800000;
+}
+
 /* the styles for the footer */
 footer {
 	background-color: #931420;
+	clear: both;
 }
 footer p {
 	text-align: center;
