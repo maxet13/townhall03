@@ -50,6 +50,55 @@ main {
 	clear: left;
 }
 
+/* styles for nav_menu */
+#nav_menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#nav_menu ul li {
+	float: left;
+}
+
+#nav_menu ul li a {
+	display: block;
+	width: 160px;
+	text-align: center;
+	padding: 1em 0;
+	text-decoration: none;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+}
+
+#nav_menu a.current {
+	color: yellow;
+}
+
+
+#nav_menu ul ul { /* using decendency to target the second tier of the menu - the nested ul's */
+    display: none; /* only disply when an end user hovers, otherwise it must be hidden */
+    position: absolute; /* position within the parent ul element */
+    top: 100%; /* position 100% from the top edge of the parent element */
+    width: 100%;
+}
+
+#nav_menu ul ul li {
+    float: none; 
+}
+
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+
+#nav_menu > ul::after { /* necessary code to help get the positioning of the submenu to behave correctly */
+    content: "";
+    clear: both;
+    display: block;
+}
+
 /* the styles for the section */
 section {
 	width: 525px;
