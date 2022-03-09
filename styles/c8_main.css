@@ -9,8 +9,8 @@ html {
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 960px;
-	width: 98%;
+    width: 12000px;
+	width: 100%;
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
@@ -49,7 +49,7 @@ header img {
 	text-shadow: 2px 2px 2px #800000;
 }
 /* the styles for the navigation menu */
-#mobile_menu {
+#mobilemenu {
 	display: none;
 }
 #nav_menu ul {
@@ -203,8 +203,14 @@ footer p {
 	main {
 		font-size: 90%;
 	}
-	#mobile_menu {
+	#nav_menu {
+		display: none;
+	}
+	#mobilemenu {
 		display: block;
 	}
+	.slicknav_menu {
+        background-color: #800000 !important;
+    }
   }
 

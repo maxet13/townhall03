@@ -3,17 +3,23 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name=11viewport11 content=11width=device-width, initial-scale=l">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>San Joaquin Valley Town Hall</title>
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="styles/c8_main.css">
 
+	<!-- Slicknav Stylesheet link -->
 	<link rel="stylesheet" href="styles/slicknav.css">
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> <script src="js/jquery.slicknav.min.js"></script>
+	<!-- jQuery CDN - needed to drive slicknav -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- link to local js slicknav script file -->
+	<script src="js/jquery.slicknav.min.js"></script>
+	<!-- slicknav script - converts contents of nav_menu to mobilemenu -->
 	<script type="text/javascript">
-	$(document).ready(function(){
-	$ ( '#nav_menu'). slicknav( {prependTo: "#mobile_menu"});
-	}); </script>
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+		});
+	</script>
 
 </head>
 
@@ -23,7 +29,7 @@
 		<h2>San Joaquin Valley Town Hall</h2>
 		<h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
 	</header>
-	<nav id="mobile_menu"></nav>
+	<nav id="mobilemenu"></nav>
 	<nav id="nav_menu">
     	<ul>
         	<li><a href="index.html" class="current">Home</a></li>
